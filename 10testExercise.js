@@ -20,9 +20,10 @@ it('Login process', async()=>
 
         await $("#password").setValue ("SuperSecretPassword!")// dвводимо перше значення
         await browser.pause(2000)
-
         await $ ("button[type='submit']") .click() 
         await browser.pause(5000)
+        await browser.saveScreenshot("screenShot.png")
+
 
     })
 
